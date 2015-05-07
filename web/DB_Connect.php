@@ -3,7 +3,7 @@ class DB_Connect
 {
 	public function __construct()
 	{
-		return $pg_conn = pg_connect(pg_connection_string_from_database_url());
+		return $pg_conn = pg_connect($this->pg_connection_string_from_database_url());
 	}
 	
 	function pg_connection_string_from_database_url() 
