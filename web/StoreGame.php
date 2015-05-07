@@ -151,10 +151,9 @@ class StoreGame
 			    "(GAME_USERNAME, GAME_WHEEL1, GAME_WHEEL2, GAME_WHEEL3, GAME_WHEEL4, GAME_WHEEL5,GAME_AMOUNTBET, GAME_AMOUNTWON, GAME_AMOUNTLOST, GAME_AMOUNTREMAINING)". 
                    "VALUES('".$_SESSION['username']."','".$w1."','".$w2."','".$w3."','".$w4."','".$w5."','".$ab."','".$aw."','".$al."','".$ar."')";
                
-          $result = mysql_query($insert); 
+          $result = pg_query($insert); 
           if ($result == FALSE)
           {
-               $error = "MySQL query error: " . mysql_error();
                echo '<script type="text/javascript">alert("StoreGame! ERROR");</script>';
           }
      }

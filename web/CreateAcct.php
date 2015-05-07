@@ -28,16 +28,16 @@ class CreateAcct
 	    		
 	    		$select = "SELECT PER_USERNAME, PER_PASSWORD 
 		    	FROM PERSON WHERE PER_USERNAME ='$username' AND PER_PASSWORD = '$password'";
-			$result = mysql_query($select);
+			$result = pg_query($select);
 
-			if(mysql_num_rows($result) == 0)
+			if(pg_num_rows($result) == 0)
 			{
 				$insert = "INSERT INTO PERSON " . 
 		                    "(PER_LAST, PER_FIRST, PER_EMAIL, PER_USERNAME, PER_PASSWORD, PER_INITIALDOLLARS) " . 
 		                    "VALUES('" . $last . "', '" . $first . "', '" . $email . "', 
 		                    '" . $username . "','" . $password . "','" . $initialdeposit ."')";
 		                    
-				$result = mysql_query($insert); 
+				$result = pg_query($insert); 
 				if ($result == FALSE)
 				{
 				      echo '<script type="text/javascript">alert("ERROR could not insert data in createAcct()");</script>';

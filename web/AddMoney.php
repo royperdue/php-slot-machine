@@ -7,7 +7,7 @@ class AddMoney
 	     $this->connection = new DB_Connect();
 	     $update = "UPDATE PERSON SET PER_INITIALDOLLARS = PER_INITIALDOLLARS +'$money'";
 	     
-          $result = mysql_query($update); 
+          $result = pg_query($update); 
           if ($result == FALSE)
           {
                  echo '<script type="text/javascript">alert("AddMoney ERROR");</script>';

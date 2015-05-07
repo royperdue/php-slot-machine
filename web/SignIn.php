@@ -11,9 +11,9 @@ class SignIn
     	
 	    	$select = "SELECT PER_USERNAME, PER_PASSWORD 
 	    	FROM PERSON WHERE PER_USERNAME ='$username' AND PER_PASSWORD = '$password'";
-		$result = mysql_query($select);
+		$result = pg_query($select);
 
-		if(mysql_num_rows($result) > 0)
+		if(pg_num_rows($result) > 0)
 		{
 			 header("Location: Game.php"); 
 		}
