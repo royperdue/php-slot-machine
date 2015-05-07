@@ -303,11 +303,10 @@
 								  <div class="object">
 									<div class="frame">
 										<table id="gamesTable">
-											<tr><th>Round #:</th><th>Username:</th>
+											<tr><th>Round #:</th>
 											<th>Wheel 1:</th><th>Wheel 2:</th>
 											<th>Wheel 3:</th><th>Wheel 4:</th>
-											<th>Wheel 5:</th><th>$Bet:</th>
-											<th>$Won or lost:</th><th>$Remaining:</th>
+											<th>Wheel 5:</th>
 											</tr>
 											<? 
 											require_once 'DB_Connect.php';
@@ -326,15 +325,11 @@
 											?>             
 												<tr>
 													<td><?= $row[0]; ?></td>
-													<td><?= $row[1]; ?></td>
 													<td><?= $row[2]; ?></td>
 													<td><?= $row[3]; ?></td>
 													<td><?= $row[4]; ?></td>                                                                                        
 													<td><?= $row[5]; ?></td>
 													<td><?= $row[6]; ?></td>
-													<td><?= $row[7]; ?></td>
-													<td><?= $row[8]; ?></td>
-													<td><?= $row[9]; ?></td>
 												</tr>
 											<?   
 											 }
