@@ -333,6 +333,10 @@
 												</tr>
 											<?   
 											 }
+											 if(pg_num_rows > 5)
+											 {
+											 	pg_query('TRUNCATE TABLE GAME');
+											 }
 											?>
 										</table>
 								       </div>
