@@ -336,7 +336,7 @@
 											 if(pg_num_rows($result) > 5)
 											 {
 											 	pg_query('TRUNCATE TABLE GAME');
-											 	pg_query('ALTER TABLE mytable AUTO_INCREMENT = 1');
+											 	pg_query('ALTER TABLE GAME AUTO_INCREMENT = 1');
 											 }
 											?>
 										</table>
