@@ -9,7 +9,7 @@ class CreateAcct
 		require_once 'DB_Connect.php';
 		$this->connection = new DB_Connect();
 
-		$last;
+			$last;
     		$first;
     		$email;
     		$username;
