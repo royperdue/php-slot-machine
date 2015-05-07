@@ -40,7 +40,7 @@ class CreateAcct
 				$result = pg_query($insert); 
 				if ($result == FALSE)
 				{
-  					  echo pg_result_error($result);
+  					  var_dump($this->errorInfo());
 				} 
 			}
 		    	else
