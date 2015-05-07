@@ -314,7 +314,7 @@
 											$connection = new DB_Connect();
 											$select = "SELECT GAME_ID, GAME_USERNAME, GAME_WHEEL1, GAME_WHEEL2, GAME_WHEEL3, GAME_WHEEL4, GAME_WHEEL5, 
 											GAME_AMOUNTBET, GAME_AMOUNTWON, GAME_AMOUNTLOST, GAME_AMOUNTREMAINING FROM GAME";
-											$result = pg_query($connection, $select);
+											$result = pg_query($select);
 											if($result == FALSE)
 											{
 												echo '<script type="text/javascript">alert("LoadGame! ERROR");</script>';
