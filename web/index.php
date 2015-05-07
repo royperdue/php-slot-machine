@@ -1,23 +1,7 @@
 <!--Roy Perdue
     Assignment_5
     Game_Page -->
-<?php		
-          $op = "nothing";
-          
-if(isset($_POST["operation"]))
-{
-     $op = $_POST["operation"];
-     if(isset($_POST["money"]))
-	{
-		if($op == "add")
-		{         
-			$money = $_POST["money"];
-			require_once 'AddMoney.php';
-		     $cash = new AddMoney($money); 
-		}
-	}
-}
-?>
+    
 <html>
    		<head>
 		<meta charset="utf-8">
@@ -364,20 +348,7 @@ if(isset($_POST["operation"]))
 				     <h4>Play Again</h4>
 				 	<a><button id="reload" onclick="reloadPage()";></button></a>
 					</div>
-					<div class="innerFooter">
-					<h4>Add Money</h4>
-					<form action="Game.php" method="post">
-						<table>
-						<tr><td class="formCell"></td><td><input type="text" name="money"/></td></tr>
-						<tr><td colspan="2"><input type="submit" value="Add"/></td></tr>
-						</table>
-						<input type="hidden" name="operation" value="add"/><br/>
-					</form>
-				 </div>
-				 <div class="innerFooter">
-				 	
-				 </div>
-				</div>
+					
 			</div>
 			</div>
 		</body>
