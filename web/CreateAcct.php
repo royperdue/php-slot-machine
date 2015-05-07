@@ -40,6 +40,7 @@ class CreateAcct
 				$result = pg_query($insert); 
 				if ($result == FALSE)
 				{
+  					  echo pg_result_error($result);
 				      echo '<script type="text/javascript">alert("ERROR could not insert data in createAcct()");</script>';
 				} 
 			}
