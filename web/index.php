@@ -239,9 +239,9 @@
             </div></div>
 			<div id="leftContainer"></div>
 			<div id="mainContent">
-			             <div class="imageborder1"><img src="cash1.png" alt=""></div>
-						 <div class="imageborder2"><img src="cash2.png" alt=""></div>
-						 <div class="imageborder3"><img src="cash3.png" alt=""></div>
+			             <div class="imageborder1"><img src="cash.png" alt=""></div>
+						 <div class="imageborder2"><img src="cash.png" alt=""></div>
+						 <div class="imageborder3"><img src="cash.png" alt=""></div>
 			           	 <div id="spinContainer">
 							<div class="flashContainer">
 							<table> 
