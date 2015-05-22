@@ -128,7 +128,7 @@ body
 }
 .bulletin
 {
-	width: 98%;
+	width: 100%;
 }
 .bulletin .frame 
 {
@@ -188,7 +188,7 @@ td
 }
 #gamesTable
 {
-	width: 98%;
+	width: 100%;
 	background-color: white;
 }
 #resetbutton
